@@ -82,3 +82,19 @@ const Frank = new Dog('Frank', 'Red')
  Frank.appearance();
  Frank.drink();
  Frank.treat();
+
+ class Fish extends tamagotchi{
+    constructor(name, bowlFeature){
+        super(name);
+        this.bowlFeature = bowlFeature;
+    }
+
+    feature(){
+        console.log(`${this.name} has a ${this.bowlFeature} in their bowl, it's their favourite`);
+        return this;
+    }    
+}
+
+const Jaws = new Fish('Jaws', 'Castle')
+
+ Jaws.feature();
